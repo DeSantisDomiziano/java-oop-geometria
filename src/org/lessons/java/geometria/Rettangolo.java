@@ -1,7 +1,6 @@
 package org.lessons.java.geometria;
 
 public class Rettangolo {
-	
 	public boolean build;
 	public int altezza;
 	public int base;
@@ -20,11 +19,13 @@ public class Rettangolo {
 	public int getArea(int base, int altezza) {
 		
 		int area = this.base * this.altezza;
+		System.out.println("l'area è: " + area);
 		return area;
 	}
 	
-	public int getPerimetro() {
+	public int getPerimetro(int base, int altezza) {
 		int perimetro = (2 * this.base) + (2 * this.altezza);
+		System.out.println("il perimetro è: " + perimetro);
 		return perimetro;
 	}
 }
