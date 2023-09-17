@@ -15,6 +15,10 @@ public class Main {
 		System.out.println("inserisci qui l'altezza del primo rettangolo: ");
 		ret1.altezza = sc.nextInt();
 		
+		for(int i = 0; i < ret1.base; i++) {
+			
+		}
+		
 		ret1.getArea(ret1.base, ret1.altezza);
 		ret1.getPerimetro(ret1.base, ret1.altezza);
 		
