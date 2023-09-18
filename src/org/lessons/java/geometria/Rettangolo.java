@@ -6,7 +6,7 @@ public class Rettangolo {
 	public int base;
 	
 	public Rettangolo() {
-		build = false;
+
 	}
 	
 	public Rettangolo(int altezza, int base) {
@@ -16,16 +16,19 @@ public class Rettangolo {
 		this.altezza = altezza;
 	}
 	
-	public int getArea(int base, int altezza) {
-		
-		int area = base * altezza;
-		System.out.println("l'area è: " + area);
-		return area;
+	public int getArea() {
+		return base * altezza;
 	}
 	
-	public int getPerimetro(int base, int altezza) {
-		int perimetro = (base + altezza) * 2;
-		System.out.println("il perimetro è: " + perimetro);
-		return perimetro;
+	public int getPerimetro() {
+		return (base + altezza) * 2;
+	}
+	
+	public String toString() {
+		String strObj = "base " + base +
+						   "\n altezza " + altezza +
+						   "\narea " + getArea() +
+						   "\nperimetro " + getPerimetro();
+		return strObj;		
 	}
 }

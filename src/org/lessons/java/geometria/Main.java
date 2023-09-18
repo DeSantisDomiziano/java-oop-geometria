@@ -15,12 +15,9 @@ public class Main {
 		System.out.println("inserisci qui l'altezza del primo rettangolo: ");
 		ret1.altezza = sc.nextInt();
 		
-		for(int i = 0; i < ret1.base; i++) {
-			
-		}
-		
-		ret1.getArea(ret1.base, ret1.altezza);
-		ret1.getPerimetro(ret1.base, ret1.altezza);
+		ret1.getArea();
+		ret1.getPerimetro();
+		System.out.println(ret1.toString());
 		
 		
 		System.out.println("inserisci qui l'altezza del secondo rettangolo: ");
@@ -28,8 +25,8 @@ public class Main {
 		System.out.println("inserisci qui base del secondo rettangolo: ");
 		ret2.base = sc.nextInt();
 		
-		ret2.getArea(ret2.base, ret2.altezza);
-		ret2.getPerimetro(ret2.base, ret2.altezza);
+		ret2.getArea();
+		ret2.getPerimetro();
 		
 		
 		System.out.println("inserisci qui l'altezza del terzo rettangolo: ");
@@ -37,12 +34,9 @@ public class Main {
 		System.out.println("inserisci qui base del terzo rettangolo: ");
 		ret3.base = sc.nextInt();
 		
-		ret3.getArea(ret3.base, ret3.altezza);
-		ret3.getPerimetro(ret3.base, ret3.altezza);
+		ret3.getArea();
+		ret3.getPerimetro();
 		
-		
-		
-		
-		
+		sc.close();
 	}
 }
